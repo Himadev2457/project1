@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+           background-color: white;
+        }
+        header{
+            position: relative;
+           background-color:white;
+            width: 100%;
+           padding: 5px 7%;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           box-shadow: 0px 0px 10px black;
+        }
+        header .logo{
+            font-size: 30px;
+            font-weight: bolder;
+            color:darkcyan;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header .navbar ul{
+          list-style: none;
+        }
+        header .navbar ul li{
+        position: relative;
+        float: left;
+        }
+        header .navbar ul li a{
+        font-size: 20px;
+        color: black;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        header .navbar ul li a:hover{
+        color: black;
+        background-color:darkcyan;
+        }
+         img{
+        height: 420px;
+        width: 100%;;
+        } 
+
+        .search-bar {
+        position: relative;
+        width: 317px;
+        margin: 0 auto;
+        margin-top: -180px;
+        right: 100px;
+        
+        }
+
+       .search-bar input {
+        width: 100%;
+        height: 38px;
+        padding: 10px;
+        border: 1px solid azure;
+        font-size: larger;
+        
+        }
+      .search-bar button {
+      position:absolute;
+      top: 0;
+      border: none;
+      padding: 10px;
+      background:darkcyan;
+      width: 80px;
+      color: white;
+      }
+      h2{
+      position: relative;
+      bottom: -220px;
+      left: 100px;
+      color: darkcyan;
+      }
+      .pg{
+     position: relative;
+     bottom:-200px ;
+     left: 1255px;
+     color: darkcyan;
+      }
+     
+      main img{
+      height: 205px;
+      width: 305px;
+      position: relative;
+      bottom: -250px;
+      left: 100px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      }
+      .box{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 50px;
+      column-gap: 20px;
+      }
+     
+    .container .text1{
+    position: relative;
+    bottom: -260px;
+    left:110px;
+    font-size: smaller;
+    font-weight: 10px;
+    color: gray;
+    }
+    .container .text2{
+    position: relative;
+    bottom: -245px;
+    left:340px;
+    font-size: smaller;
+    font-weight: 10px;
+    color: gray;
+    }
+   
+   navbar div .previous{
+   border: 2px solid darkcyan;
+   padding: 14px 30px;
+   position: relative;
+   bottom: -320px;
+   left: 105px;
+   background-color: darkcyan;
+   color: white;
+   border-radius: 10px;
+   }
+   navbar div .n1{
+   border: 2px solid darkcyan;
+   padding: 10px 15px ;
+   background-color: darkcyan;
+   color: white;
+    position: relative;
+   bottom: -320px;
+   left: 520px;
+   border-radius: 5px;
+   }
+   navbar div .n2{
+   border: 2px solid lightgray;
+   padding: 10px 15px ;
+   background-color: lightgray;
+   color: gray;
+   position: relative;
+   bottom: -320px;
+   left: 540px;
+   border-radius: 5px;
+   }
+    navbar div .n3{
+   border: 2px solid lightgray;
+   padding: 10px 15px ;
+   background-color:lightgray;
+   color: gray;
+   position: relative;
+   bottom: -320px;
+   left: 560px;
+   border-radius: 5px;
+   }
+    navbar div .n4{
+   border: 2px solid lightgray;
+   padding: 10px 15px ;
+   background-color:lightgray;
+   color: gray;
+   position: relative;
+   bottom: -320px;
+   left: 580px;
+   border-radius: 5px;
+   }
+   navbar div .next{
+   border: 2px solid darkcyan;
+   padding: 14px 30px;
+   position: relative;
+   bottom: -320px;
+   left: 960px;
+   background-color: darkcyan;
+   color: white;
+   border-radius: 10px;
+   }
+   .pb a:hover{
+    background-color: darkcyan;
+    color: white;
+   }
+   footer {
+   background-color: lightgray;
+   position: relative;
+   bottom: -390px;
+   height: 290px;
+   }
+   footer div .hb{
+    position: relative;
+    bottom: -50px;
+    left: 410px;
+   }
+   footer div .pmp{
+    position: relative;
+    bottom: -65px;
+    left: 410px;
+    font-size: medium;
+    font-style: normal;
+    color: gray;
+   }
+   footer div .sr{
+   position: relative;
+   bottom: -130px;
+   left: 400px;
+   color: gray;
+   }
+   footer div .pl{
+   position: relative;
+   top: -80px;
+   left: 805px;
+   color: darkcyan;
+   }
+   footer div .rk{
+   position: relative;
+   top: -70px;
+   left: 805px;
+   color: gray;
+   }
+   footer div .mk{
+   position: relative;
+   top: -80px;
+   left: 1100px;
+   color: gray;
+
+   }
+   footer div .pk{
+   position: relative;
+   top: -25px;
+   left: 1000px;
+   color: gray; 
+   }
+   .social-menu{
+    position: relative;
+    display: flex;
+     top: -250px;
+     left: 950px
+   }
+   .social-menu ul {
+   display: flex;
+   }
+   .social-menu ul li {
+   list-style: none;
+   margin: 0 15px;
+   }
+  .social-menu ul li a ion-icon{
+    background-color: white;
+    color:gray;
+    height: 50px;
+    width: 35px;
+   }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Catalog-Z</a>
+        <div class="navbar">
+            <ul>
+                <li><a href="#" >Photos</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+        <div class="image">
+        <img src="images/mountain.webp" height="100vh" width="200vw">
+        <div class="search-bar">
+            <input type="text" placeholder="search">
+            <button><ion-icon name="search-outline" style="font-size: 15px;"></ion-icon></button>
+        </div>
+     </div>  
+    <h2>Latest Photos</h2>
+   <p class="pg">Page 1 of 180</p>
+   <main>
+   <div class="box">
+   <div class="container">
+   <img src="images/image1.jpg">
+   <p class="text1">24 Oct 2020</p>
+   <p class="text2">10,460views</p>
+   </div>
+   <div class="container">
+   <img src="images/image2.jpg">
+   <p class="text1">22 Oct 2020</p>
+   <p class="text2">14,502views</p>
+   </div>
+   <div class="container">
+   <img src="images/image3.jpg">
+   <p class="text1">18 Oct 2020</p>
+   <p class="text2">11,906views</p>
+   </div>
+   <div class="container">
+   <img src="images/image4.jpg">
+   <p class="text1">12 Oct 2020</p>
+   <p class="text2">16,100views</p>
+   </div>
+   <div class="container">
+   <img src="images/image5.jpg">
+   <p class="text1">24 Sep 2020</p>
+   <p class="text2">16,008views</p>
+   </div>
+   <div class="container" >
+   <img src="images/image6.jpg">
+   <p class="text1">21 Sep 2020</p>
+   <p class="text2">12,860views</p>
+   </div>
+   <div class="container">
+   <img src="images/image7.jpg">
+   <p class="text1">18 Sep 2020</p>
+   <p class="text2">10,900views</p>
+   </div>
+   <div class="container">
+   <img src="images/image8.jpg">
+   <p class="text1">14 Sep 2020</p>
+   <p class="text2">10,820views</p>
+   </div>
+   <div class="container">
+   <img src="images/image9.jpg">
+   <p class="text1">12 Sep 2020</p>
+   <p class="text2">42,700views</p>
+   </div>
+   <div class="container">
+   <img src="images/image10.jpg">
+   <p class="text1">9 Sep 2020</p>
+   <p class="text2">11,402views</p>
+   </div>
+   <div class="container">
+   <img src="images/image11.jpg">
+   <p class="text1">8 Sep 2020</p>
+   <p class="text2">32,906views</p>
+   </div>
+   <div class="container">
+   <img src="images/image12.jpg">
+   <p class="text1">6 Sep 2020</p>
+   <p class="text2">50,700views</p>
+   </div>
+   <div class="container">
+   <img src="images/image13.jpg">
+   <p class="text1">28 Aug 2020</p>
+   <p class="text2">107,510views</p>
+   </div>
+   <div class="container">
+   <img src="images/image14.jpg">
+   <p class="text1">24 Aug 2020</p>
+   <p class="text2">118,006views</p>
+   </div>
+   <div class="container">
+   <img src="images/image15.jpg">
+   <p class="text1">20 Aug 2020</p>
+   <p class="text2">121,300views</p>
+   </div>
+   <div class="container">
+   <img src="images/image16.jpg">
+   <p class="text1">14 Aug 2020</p>
+   <p class="text2">21,204views</p>
+   </div>
+   </div>
+   </main>
+   <navbar>
+   <div class="pb">
+    <a href="#" class="previous">Previous</a>
+    <a href="#" class="n1">1</a>
+    <a href="#" class="n2">2</a>
+    <a href="#" class="n3">3</a>
+    <a href="#" class="n4">4</a>
+    <a href="#" class="next">Next Page</a>
+   </div>
+   </navbar>
+   <footer>
+    <div>
+    <h2 class="hb">About Catalog-Z</h2>
+    <p class="pmp">Catalog-Z is a free Boostrap 5 Alpha 2 Html<br/>
+    Template for video and photo websites.You can<br/>
+    Freely use this TemplateMO layout for a frent-end <br/>
+    integration with any kind of CMS  Website.
+    </p>
+    <p class="sr">Copyright 2020 Catalog-Z Company. All rights reserved</p>
+    <h2 class="pl">Our Links</h2>
+    <p class="rk">Advertise<br>
+    Support<br/>
+    Our Company<br/>
+    Contact<br/>
+</p>  
+<p class="mk">
+Terms of use<br/>
+Privacy Policy
+</p>
+<p class="pk">
+Designed by templateMo
+</p>
+</div>
+<div class="social-menu">
+   <ul>
+    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+   </ul>
+    </div>
+   
+
+</footer>
+</body>
+</html>
